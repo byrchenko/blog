@@ -1,0 +1,12 @@
+@import "../../sass/elements.scss";
+
+.index {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+	@include container;
+
+	padding-top: 80px;
+	padding-bottom: 75px;
+}

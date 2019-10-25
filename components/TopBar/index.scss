@@ -1,0 +1,13 @@
+@import "../../sass/elements.scss";
+
+.container {
+	@include container;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.index {
+	padding: 15px 0;
+	background-color: #202123;
+}
