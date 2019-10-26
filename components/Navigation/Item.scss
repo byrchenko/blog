@@ -1,0 +1,31 @@
+.item {
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	color: #2b2d2e;
+}
+
+.link {
+	text-decoration: none;
+
+	@extend .item;
+}
+
+.text {
+	@extend .item;
+
+	i {
+		margin-left: 7px;
+		font-size: 1.1rem;
+		color: #b7b7b7;
+	}
+}
+
+.index {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}

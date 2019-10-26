@@ -1,0 +1,14 @@
+@import "../../sass/elements.scss";
+
+.index {
+	padding: 25px 0;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 2px;
+}
+
+.container {
+	@include container;
+
+	display: flex;
+	justify-content: center;
+}
