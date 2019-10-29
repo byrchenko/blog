@@ -26,7 +26,7 @@ class Item extends React.Component {
 					<span className={css.text}>
 						{item.title}
 
-						<i class='fas fa-chevron-down'></i>
+						<i className='fas fa-chevron-down'></i>
 					</span>
 
 					<Sublist list={item.children} />

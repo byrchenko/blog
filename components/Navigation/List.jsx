@@ -9,7 +9,7 @@ class List extends React.Component {
 	 * @param {*} item
 	 */
 	renderItem(item) {
-		return <Item item={item} />;
+		return <Item item={item} key={item.title} />;
 	}
 
 	/**
