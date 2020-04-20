@@ -1,25 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
 import css from "./index.scss";
-import TopBar from "../TopBar";
 import Logo from "./Logo";
+import Navigation from "../Navigation";
 
+/**
+ *
+ */
 class Header extends React.Component {
-	render() {
-		return (
-			<div className={css.index}>
-				<TopBar />
 
-				<div className={css.container}>
-					<Logo />
-				</div>
-			</div>
-		);
-	}
+    /**
+     *
+     */
+    render() {
+        return (
+            <section className={css.index}>
+                <div className={css.container}>
+                    <Logo title={"SW iNG"} />
+
+                    <Navigation />
+
+                    <div className={css.button}>
+                        <button className={css.burger}>
+                            <i className="fas fa-bars" />
+                        </button>
+                    </div>
+                </div>
+            </section>
+        );
+    }
 }
-
-Header.propTypes = {};
-
-Header.defaultProps = {};
 
 export default Header;

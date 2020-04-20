@@ -1,10 +1,11 @@
 @import "../../sass/elements.scss";
 
 .container {
-	@include container;
+	@extend %container;
 
 	display: flex;
 	justify-content: space-between;
+	padding: 0 15px;
 }
 
 .index {

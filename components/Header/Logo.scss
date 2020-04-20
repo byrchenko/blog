@@ -1,5 +1,10 @@
 .index {
-	font-size: 7.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex: 1;
+	font-size: 6.4rem;
+	line-height: 1;
 	font-family: "Poppins", sans-serif;
 	color: #000;
 	text-align: center;

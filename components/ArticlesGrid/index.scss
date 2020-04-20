@@ -1,0 +1,7 @@
+@import "../../sass/elements";
+
+.index {
+  @extend %container;
+
+  padding: 15px;
+}

@@ -1,0 +1,65 @@
+.index {
+  opacity: 0;
+
+  &:hover {
+    .image {
+      img {
+        $scale: 1.05;
+
+        transform: scale3d($scale, $scale, $scale);
+      }
+    }
+  }
+}
+
+.appeared {
+  opacity: 1;
+
+  animation: appear .5s ease-out;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0,0,0,.55);
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+    transition: transform .25s ease-out;
+  }
+}
+
+.category {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 2.7rem;
+  letter-spacing: 0.12rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(45%);
+    opacity: .2;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

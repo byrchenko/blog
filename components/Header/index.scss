@@ -5,8 +5,32 @@
 }
 
 .container {
-	@include container;
+	@extend %container;
 
-	padding-top: 80px;
-	padding-bottom: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 15px;
+}
+
+.button {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.burger {
+	border: none;
+	background: transparent;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	cursor: pointer;
+	transition: transform .2s ease-out;
+
+	&:hover {
+		transform: rotate(10deg);
+	}
 }

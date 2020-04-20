@@ -15,8 +15,8 @@ const Default = props => {
 			<Head>
 				<script
 					src='https://kit.fontawesome.com/38f65ed767.js'
-					crossorigin='anonymous'
-				></script>
+					crossOrigin='anonymous'
+				/>
 			</Head>
 
 			<React.Fragment>{children}</React.Fragment>

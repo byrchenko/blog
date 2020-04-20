@@ -1,22 +1,25 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
-import Navigation from "../components/Navigation";
-import MainSlider from "../components/MainSlider";
+import TopBar from "../components/TopBar";
+import ArticlesGrid from "../components/ArticlesGrid";
+import Footer from "../components/Footer";
 
 const Home = () => (
-	<div>
-		<Head>
-			<title>Home</title>
-			<link rel='icon' href='/favicon.ico' />
-		</Head>
+    <div>
+        <Head>
+            <title>Home</title>
+            <link rel='icon' href='/favicon.ico'/>
+        </Head>
 
-		<Header />
+        <TopBar />
 
-		<Navigation />
+        <Header />
 
-    <MainSlider />
-	</div>
+        <ArticlesGrid />
+
+        <Footer />
+    </div>
 );
 
 export default Home;

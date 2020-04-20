@@ -6,11 +6,7 @@ import list from "../../_api/navigation";
 
 const Navigation = props => {
 	return (
-		<div className={css.index}>
-			<div className={css.container}>
-				<List list={list} />
-			</div>
-		</div>
+		<List list={list} />
 	);
 };
 

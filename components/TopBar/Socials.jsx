@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import css from "./Socials.scss";
 import icons from "../../_configs/socials";
+import labels from "../../constants/socials";
 
 class Socials extends React.Component {
 	/**

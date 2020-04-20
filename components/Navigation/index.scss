@@ -1,13 +1,17 @@
 @import "../../sass/elements.scss";
 
 .index {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 25px 0;
 	border-top: 1px solid #e5e5e5;
 	margin-top: 2px;
 }
 
 .container {
-	@include container;
+	@extend %container;
 
 	display: flex;
 	justify-content: center;
