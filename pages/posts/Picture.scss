@@ -1,0 +1,14 @@
+.index {
+  max-height: 754px;
+  overflow: hidden;
+  background-color: #84888b;
+  margin-bottom: 50px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
